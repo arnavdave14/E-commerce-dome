@@ -1,0 +1,18 @@
+
+:root{
+    --white:#fff;
+
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
