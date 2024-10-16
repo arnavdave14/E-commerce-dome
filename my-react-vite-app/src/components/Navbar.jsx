@@ -4,6 +4,7 @@ import { Navbody , Logo , Ulbody , Lilinks , NavBtnSec , LogBtn , CartBtn   } fr
 import { FaShopify ,  FaShoppingCart  } from "react-icons/fa";
 
 
+
 const Navbar = () => {
   return (
    <React.Fragment>
@@ -13,14 +14,14 @@ const Navbar = () => {
         <span className='span'>My Store</span>
       </Logo>
       <Ulbody>
-        <Lilinks>Shop</Lilinks>
-        <Lilinks>Men</Lilinks>
-        <Lilinks>Women</Lilinks>
-        <Lilinks>Kid</Lilinks>
+        <Lilinks to='/'>Shop</Lilinks>
+        <Lilinks to='/Mens'>Men</Lilinks>
+        <Lilinks to='/Womens'>Women</Lilinks>
+        <Lilinks to='/Kids'>Kid</Lilinks>
       </Ulbody>
       <NavBtnSec>
-      <LogBtn>Login</LogBtn>
-      <CartBtn> <FaShoppingCart  size={26} /></CartBtn>
+      <LogBtn to ='/login'>Login</LogBtn>
+      <CartBtn to='/cart'> <FaShoppingCart  size={26} /></CartBtn>
       </NavBtnSec>
     </Navbody>
    </React.Fragment>

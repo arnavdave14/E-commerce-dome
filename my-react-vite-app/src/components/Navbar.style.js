@@ -1,5 +1,23 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import "./Navbar.css" 
+
+
+
+export const Lilinks = styled(Link)`
+        color:var(--white);
+        cursor: pointer;
+        display: flex;
+        padding: 10px ;
+        color: var(--black);
+        flex-direction: column;
+
+&:hover{
+    color: red;
+    transition: ease-in 0.3s;
+}
+`
+
 
 
 export const Navbody = styled.div`
@@ -29,21 +47,6 @@ export const Ulbody = styled.div`
             display: flex;
             align-items: center;
 
-`
-
-export const Lilinks = styled.a`
-        text-decoration: none;
-        color:var(--white);
-        cursor: pointer;
-        display: flex;
-        padding: 10px ;
-        color: var(--black);
-        flex-direction: column;
-
-&:hover{
-    color: red;
-    transition: ease-in 0.3s;
-}
 `
 
 export const NavBtnSec = styled.div`
