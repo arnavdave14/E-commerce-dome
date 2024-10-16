@@ -1,54 +1,81 @@
 import styled from 'styled-components'
-
-export const StyledAlink = styled.a` 
-background-color: transparent;
-display: flex;
-align-items: center;
-color: black;
-font-weight: 400;
-border-radius:10px;
-border:none;
-outline: none;
+import "./Navbar.css" 
 
 
-&:hover{
-    background-color: transparent;
-    color: #fd7f00;
-    font-weight: 400;
-    border-radius:10px;
-    transition: ease-in 0.5s;
-    border:none;
-    outline: none;
-    text-decoration: none;
+export const Navbody = styled.div`
+    width:100%;
+    display:flex;
+    align-items: center;
+    height:80px;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+`
+export const Logo = styled.a`
+        text-decoration: none;
+        color:white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        color: var(--black);
+
+
+
+        &:hover{
+        color: var(--black);
 }
 `
 
+export const Ulbody = styled.div`
+            display: flex;
+            align-items: center;
 
+`
 
-export const StyledButton = styled.button`
-    border:1px solid black;
-    background-color: white;
-    color: black;
-    font-weight: 400;
-    border-radius:10px;
-
+export const Lilinks = styled.a`
+        text-decoration: none;
+        color:var(--white);
+        cursor: pointer;
+        display: flex;
+        padding: 10px ;
+        color: var(--black);
+        flex-direction: column;
 
 &:hover{
-    border:1px solid white;
-    background-color: black;
-    color: white;
-    font-weight: 400;
-    border-radius:10px;
-    transition: ease-in 0.5s;
-
-    
-
-&:focus{
-    border:2px solid pink;
-    background-color: #006eff;
-    color: #00d05a;
-    font-weight: 400;
-    border-radius:15px;
-}
+    color: red;
+    transition: ease-in 0.3s;
 }
 `
+
+export const NavBtnSec = styled.div`
+        display: flex;
+        align-items: center;
+
+`
+export const LogBtn =  styled.button`
+            border: 1px solid var(--black);
+            background-color: var(--white);
+            color: var(--black);
+            padding:10px 20px;
+            border-radius:5px;
+            
+            
+            &:hover{
+            border: 1px solid var(--white);
+            background-color:var(--black);
+            color: var(--white);
+            transition: ease-in-out 0.3s;
+            } 
+`
+export const CartBtn = styled.a`
+                padding-left: 20px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                color: var(--lightblack);
+
+&:hover {
+
+        color:var(--black);
+        transition: ease-in-out 0.3s;
+}
+`;
