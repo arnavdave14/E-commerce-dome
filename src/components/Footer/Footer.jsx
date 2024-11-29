@@ -6,7 +6,7 @@ import { FaInstagram , FaWhatsapp , FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <Footerbody>
-        <Footerlogo>
+        <Footerlogo to='/'>
         <FaShopify size={56} />
         <span className='span'>My Store</span>
         </Footerlogo>

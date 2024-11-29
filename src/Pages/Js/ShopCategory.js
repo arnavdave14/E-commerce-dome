@@ -43,3 +43,20 @@ export const ShopCategoryproduct = styled.div`
             gap: 20px;
 
 `
+
+export const ShopCategoryLoadmore = styled.div`
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 150px auto;
+            width: 233px;
+            height:69px;
+            border-radius: 75px;
+            background: #ededed;
+            color: #787878;
+            font-size: 18px;
+            font-weight: 500;
+             
+
+
+`

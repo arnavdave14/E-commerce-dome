@@ -6,6 +6,7 @@ import {
   ShopCategoryshort,
   ShopCategoryshortimg,
   ShopCategoryproduct,
+  ShopCategoryLoadmore,
 } from './Js/ShopCategory.js';
 import dropdown_icon from '../components/Assets/dropdown_icon.png';
 import Item from '../components/Items/Item.jsx';
@@ -20,7 +21,7 @@ const ShopCategory = (props) => {
           <span>Showing 1-12</span> out of 36 Products
         </p>
         <ShopCategoryshort>
-          sort by <ShopCategoryshortimg src={dropdown_icon} alt="dropdown_icon" />
+          sort by <ShopCategoryshortimg src={dropdown_icon} alt=" " />
         </ShopCategoryshort>
       </ShopCategoryindexshort>
       <ShopCategoryproduct>
@@ -41,6 +42,9 @@ const ShopCategory = (props) => {
           }
         })}
       </ShopCategoryproduct>
+      <ShopCategoryLoadmore>
+          Expolre More
+      </ShopCategoryLoadmore>
     </ShopCategorybody>
   );
 };
